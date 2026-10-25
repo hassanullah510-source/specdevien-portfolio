@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hassanullah510-source.github.io/hassan-portfolio/sitemap.xml

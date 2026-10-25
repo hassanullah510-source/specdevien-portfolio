@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs and local audit output
+*.log
+lighthouse-report.*
+.lighthouseci/
+
+# Node tooling used only for local preview/audits
+node_modules/
+npm-debug.log*

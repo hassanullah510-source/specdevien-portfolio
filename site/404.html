@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Signal lost | Hassan Ullah</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#07080a">
+  <!-- 404 pages can be served from any missing path, so this page is fully
+       self-contained and uses absolute URLs. Update them if the repo or domain
+       changes. -->
+  <link rel="icon" href="https://hassanullah510-source.github.io/hassan-portfolio/assets/img/favicon.svg" type="image/svg+xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background:
+        radial-gradient(40% 40% at 80% 15%, rgb(215 255 62 / 0.14), transparent 70%),
+        radial-gradient(40% 40% at 15% 85%, rgb(255 61 127 / 0.14), transparent 70%),
+        #07080a;
+      color: #f2efe6;
+      font-family: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { width: min(100%, 44rem); }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 2rem;
+      border-radius: 0.65rem;
+      background: #d7ff3e;
+      color: #07080a;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.08em;
+      text-decoration: none;
+    }
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: #a7adbb;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .eyebrow span { color: #d7ff3e; }
+    h1 {
+      margin: 0;
+      font-size: clamp(5rem, 22vw, 11rem);
+      font-weight: 600;
+      line-height: 0.8;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 2px #f2efe6;
+    }
+    h2 {
+      margin: 1.2rem 0 0;
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    p {
+      max-width: 40ch;
+      margin: 0.9rem 0 0;
+      color: #a7adbb;
+      line-height: 1.6;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 2rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 3rem;
+      padding: 0.7rem 1.2rem;
+      border: 1px solid #d7ff3e;
+      border-radius: 999px;
+      background: #d7ff3e;
+      color: #07080a;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .btn.secondary { border-color: rgb(242 239 230 / 0.28); background: transparent; color: #f2efe6; }
+    .btn:hover { filter: brightness(1.08); }
+    :focus-visible { outline: 3px solid #d7ff3e; outline-offset: 4px; }
+    @media (prefers-reduced-motion: no-preference) {
+      .wrap { animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="mark" href="https://hassanullah510-source.github.io/hassan-portfolio/" aria-label="Hassan Ullah — home">HU</a>
+    <p class="eyebrow"><span>Error 404</span> / Signal lost</p>
+    <h1>404</h1>
+    <h2>This page is off the grid.</h2>
+    <p>The link may be old, or the page may have moved. Head back to the portfolio and pick up the signal there.</p>
+    <div class="actions">
+      <a class="btn" href="https://hassanullah510-source.github.io/hassan-portfolio/">Back to the portfolio</a>
+      <a class="btn secondary" href="mailto:hassanullah510@gmail.com">Email me</a>
+    </div>
+  </main>
+</body>
+</html>

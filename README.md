@@ -43,6 +43,20 @@ Then open <http://localhost:3000> or <http://localhost:8080>. Opening `site/inde
 directly also shows all content, but clipboard and smooth-scroll behaviour may differ on
 `file://`.
 
+### Build the stylesheet
+
+`site/assets/css/styles.css` is the readable source. The page loads
+`site/assets/css/styles.min.css`, which is generated from it. After editing the source,
+rebuild:
+
+```powershell
+npx.cmd --yes csso-cli@5.0.5 --output site/assets/css/styles.min.css site/assets/css/styles.css
+```
+
+The GitHub Pages workflow runs the same command on every deploy, so the published site
+always matches the source. Rebuild locally if you want the minified file in sync in the
+repository too.
+
 ## Editing content
 
 ### Add or update a project link
